@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import navbar from Components 
+import Navbar from "./components/Navbar"
+// import Footer from components 
+import Footer from './components/Footer'
+import AddLabtest from './components/AddLabtest'
+import AddNurse from "./components/AddNurse"
+import ViewLabtest from "./components/ViewLabtest"
+import ViewNurses from "./components/ViewNurses"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from './components/NotFound'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <BrowserRouter>
+      <Routes>
+        
+          
+          
+          <Route path="/addlabtest" element={<AddLabtest />} />
+          <Route path="/viewlabtest" element={<ViewLabtest />} />
+          <Route path="/addnurse" element={<AddNurse />} />
+          <Route path="/viewnurse" element={<ViewNurses />} />
+          <Route path="*" element={<NotFound />} /> 
+        
+      </Routes>
+    </BrowserRouter>
+
+      {/* <Footer/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
