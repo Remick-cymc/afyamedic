@@ -9,6 +9,7 @@ import ViewLabtest from "./components/ViewLabtest"
 import ViewNurses from "./components/ViewNurses"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound'
+import Home from './components/Home'
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
       <Routes>
         
           
-          
+          <Route path="/" element={<Home />} /> 
           <Route path="/addlabtest" element={<AddLabtest />} />
           <Route path="/viewlabtest" element={<ViewLabtest />} />
           <Route path="/addnurse" element={<AddNurse />} />
@@ -28,7 +29,7 @@ const App = () => {
       </Routes>
     </BrowserRouter>
 
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

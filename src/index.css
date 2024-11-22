@@ -22,12 +22,12 @@ code {
   font-family: "Poppins" , sans-serif;
 }
 body{
-  min-height: 100vh;
+
   width: 100%;
   background: #EEECEB;
 }
 footer{
-  position: fixed;
+ margin-top: 50px;
  
   width: 100%;
   bottom: 0;
@@ -284,4 +284,4 @@ footer .bottom-details .bottom_text{
     margin: 20px 0;
     display: inline-block;}
 	.contant_box_404{ margin-top:-50px;}
-
+/* Reset some default styles */
