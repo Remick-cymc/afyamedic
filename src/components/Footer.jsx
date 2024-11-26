@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <footer className='bg-primary'>
     <div className="content">
+
     
       <div className="link-boxes">
         <ul className="box">
@@ -15,8 +16,8 @@ const Footer = () => {
         </ul>
         <ul className="box">
           <li className="link_name">Services</li>
-          <li><a href="#">App design</a></li>
           <li><a href="#">Web design</a></li>
+          <li><a href="#">App design</a></li>
           <li><a href="#">Logo design</a></li>
           <li><a href="#">Banner design</a></li>
         </ul>
@@ -28,11 +29,10 @@ const Footer = () => {
           <li><a href="#">Purchase</a></li>
         </ul>
         <ul className="box">
-          <li className="link_name">Courses</li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">Photography</a></li>
-          <li><a href="#">Photoshop</a></li>
+          <li className="link_name">Certificates</li>
+          <li><a href="#">ISO 1705</a></li>
+          <li><a href="#">FDA</a></li>
+          <li><a href="#">HIPAA</a></li>
         </ul>
         <ul className="box input-box">
           <li className="link_name">Subscribe</li>

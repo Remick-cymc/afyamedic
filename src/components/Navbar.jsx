@@ -24,6 +24,7 @@ function ColorSchemesExample() {
             <Nav.Link href="/viewlabtest">View Labtests</Nav.Link>
             <Nav.Link href="/addnurse">Add Nurses</Nav.Link>
             <Nav.Link href="/viewnurse">View Nurses</Nav.Link>
+            <Nav.Link href="/viewbookings">View Bookings</Nav.Link>
             <Nav.Link href="">Welcome, {admin_surname}</Nav.Link>
             <Nav.Link href="" onClick={handlelogoutFunction}>Logout</Nav.Link>
             

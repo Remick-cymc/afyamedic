@@ -12,6 +12,7 @@ import NotFound from './components/NotFound'
 import Home from './components/Home'
 import Register from './components/Register'
 import Login from './components/Login'
+import ViewBookings from './components/ViewBookings'
 const App = () => {
   return (
     <div>
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/viewlabtest" element={<ViewLabtest />} />
           <Route path="/addnurse" element={<AddNurse />} />
           <Route path="/viewnurse" element={<ViewNurses />} />
+          <Route path="/viewbookings" element={<ViewBookings />} />
           <Route path="*" element={<NotFound />} /> 
         
       </Routes>
